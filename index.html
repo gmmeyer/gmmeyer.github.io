@@ -3,38 +3,54 @@
 <html>
 	<head>
 		<title>Please Hire Me</title>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="page.css">
 		
 
 	</head>
 	<body>
 
 		<section class="top">
-			<a href="#top"></a>
+			<a id="top"></a>
 			
 		</section>
 
-		<nav class="header">
-			<ul>
-				<li>
-					<a href="#top">Home</a>
-				</li>
-				<li>
-					<a href="#whoami">Who Am I?</a>
-				</li>
-				<li>
-					<a href="#portfolio">Portfolio</a>					
-				</li>
-				<li>
-					<a href=""></a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="navbar-wrapper">
+			<div class="navwrapper">
 
-		<section >
+				<nav class="header">
+					<ul>
+						<li>
+							<a href="#top">Home</a>
+						</li>
+						<li>
+							<a href="#whoami">Who Am I?</a>
+						</li>
+						<li>
+							<a href="#portfolio">Portfolio</a>					
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
 			
+			</div>
+		</div>
+
+		<section class="whoami">
+			<a id="whoami"></a>
+			
+		</section>
+		<section class="portfolio">
+			<a id="portfolio"></a>
+			
+		</section>
+		<section class="contact">
+			<a id="contact"></a>
 		</section>
 	</body>
 
@@ -54,7 +70,8 @@
 			                    7: 'contact'
 			                  },
 			                  itemClass: 'menuItem',
-			                  itemHover: 'active'
+			                  itemHover: 'active',
+			                  marginTop: 'auto'
 			                });
 
 				  $('a[href*=#]:not([href=#])').click(function() {
