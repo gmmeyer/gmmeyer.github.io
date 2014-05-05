@@ -16,6 +16,7 @@ ul {
 
 body {
 	color: #000;
+	font-size: 16px;
 }
 
 .group:after {
@@ -36,6 +37,7 @@ a:hover {
 /* Navbar */
 
 .navbar-wrapper {
+	position: relative;
 	margin-top: 20px;
 	color: white;
 	width: 100%;
@@ -78,6 +80,9 @@ a:hover {
 
 /* Sections */
 
+
+	/* Top */
+
 .cover {
 	background-color: #313A75;
 	color: white;
@@ -89,8 +94,10 @@ a:hover {
 
 .section-title-wrapper {
 	margin: auto auto;
-		left: 20%;
+	margin-top: 80px;
+	left: 20%;
 	right: 20%;
+	text-align: center;
 
 	position: absolute;
 }
@@ -99,17 +106,21 @@ a:hover {
 	font-size: 55px;
 	line-height: 65px;
 	margin: auto auto;
-}
-
-.name-title > a {
-	display: block;
-}
-
-.name-title > a:hover {
-	text-decoration: none;
+	margin-bottom: 40px;
 }
 
 .name {
-	/*font-variant: small-caps;*/
 	font-weight: bold;
 }
+
+.top-description {
+	
+}
+
+	/* Who Am I */
+
+.whoami {
+	margin: 40px 5%;
+	padding: 10px 5px;
+}
+

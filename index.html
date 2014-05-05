@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Please Hire Me</title>
+		<title>Hire Me!</title>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="page.css">
@@ -13,11 +13,18 @@
 			<section class="top cover group">
 
 				<section class='section-title-wrapper'>
-					<h1 class="name-title name">
-						<a href="#">Greg Meyer</a>
+					<div class="description">
+						<h1 class="name-title name">
+							Greg Meyer
+						</h1>
 
-					</h1>
-					
+						<p class="top-description">
+							
+						</p>
+					</div>
+
+					<div class="picture">
+					</div>					
 				</section>
 				
 			</section>
@@ -48,59 +55,63 @@
 				</div>
 			</div>
 
+			<div id="whoami", style="margin-top: 0px;">
+
+				<section class="whoami group">
+
+					
+
+				
+				</section>
+				
+			</div>
+			<section id="portfolio" class="portfolio group">
+				
+			</section>
+			<section id="contact" class="contact group">
+
+			</section>
+
+		  <script src="js/jquery.min.js"></script>
+
+
+		  <script src="js/stickUp.min.js"></script>
+
+
+			<script>
+				jQuery(function($) {
+				  $(document).ready( function() {
+				    //enabling stickUp on the '.navbar-wrapper' class
+				    $('.navbar-wrapper').stickUp({
+				                  parts: {
+				                    0:'home',
+				                    1:'whoami',
+				                    2:'portfolio',
+				                    3:'contact'
+				                  },
+				                  itemClass: 'menuItem',
+				                  itemHover: 'active',
+				                  marginTop: 'auto'
+				                });
+
+					  $('a[href*=#]:not([href=#])').click(function() {
+					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					      var target = $(this.hash);
+					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					      if (target.length) {
+					        $('html,body').animate({
+					          scrollTop: target.offset().top
+					        }, 1000);
+					        return false;
+					      }
+					    }
+					  });	    
+				  });
+				});
+
+
+
+			</script>
 		</div>
-		<section id="whoami" class="whoami group">
-			<p>
-				I'm Greg.
-			</p>
-			
-		</section>
-		<section id="portfolio" class="portfolio group">
-			
-		</section>
-		<section id="contact" class="contact group">
-
-		</section>
-
-	  <script src="js/jquery.min.js"></script>
-
-
-	  <script src="js/stickUp.min.js"></script>
-
-
-		<script>
-			jQuery(function($) {
-			  $(document).ready( function() {
-			    //enabling stickUp on the '.navbar-wrapper' class
-			    $('.navbar-wrapper').stickUp({
-			                  parts: {
-			                    0:'home',
-			                    1:'whoami',
-			                    2:'portfolio',
-			                    3:'contact'
-			                  },
-			                  itemClass: 'menuItem',
-			                  itemHover: 'active',
-			                  marginTop: 'auto'
-			                });
-
-				  $('a[href*=#]:not([href=#])').click(function() {
-				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				      var target = $(this.hash);
-				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				      if (target.length) {
-				        $('html,body').animate({
-				          scrollTop: target.offset().top
-				        }, 1000);
-				        return false;
-				      }
-				    }
-				  });	    
-			  });
-			});
-
-
-
-		</script>
 	</body>
 </html>
