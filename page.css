@@ -1,3 +1,5 @@
+/* Resets */
+
 html, section, li, a, ul, body {
 	font: inherit;
 	padding: 0;
@@ -6,4 +8,24 @@ html, section, li, a, ul, body {
 	font-family: "FontAwesome", "HelveticaNeue", "Helvetica", sans-serif;
 }
 
+body {
+	color: ;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+.navbar-wrapper {
+	margin: 10px auto;
+	background: teal;
+	color: white;
+}
 
