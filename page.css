@@ -1,6 +1,6 @@
 /* Resets */
 
-html, section, li, a, ul, body, h1, p{
+html, section, li, a, ul, body, h1, h2, p{
 	font: inherit;
 	padding: 0;
 	margin: 0;
@@ -16,7 +16,20 @@ ul {
 
 body {
 	color: #000;
-	font-size: 16px;
+	font-size: 20px;
+}
+
+img {
+	display: block;
+}
+
+p {
+	line-height: 25px;
+}
+
+h2 {
+	font-size: 45px;
+	font-weight: bold;
 }
 
 .group:after {
@@ -39,6 +52,7 @@ a:hover {
 .navbar-wrapper {
 	position: relative;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	color: white;
 	width: 100%;
 }
@@ -85,6 +99,7 @@ a:hover {
 
 .cover {
 	background-color: #313A75;
+	padding-top: 80px;
 	color: white;
 	width: 100%;
 	position: relative;
@@ -92,19 +107,30 @@ a:hover {
 	height: 500px;
 }
 
+.picture > img {
+	float: right;
+	height: 100px;
+	width: 213px;
+	height: 350px;
+}
+
 .section-title-wrapper {
 	margin: auto auto;
-	margin-top: 80px;
-	left: 20%;
-	right: 20%;
+	width: 730px;
+	height: 350px;
+	display: block;
 	text-align: center;
+}
 
-	position: absolute;
+.description {
+	float: left;
+	display: block;
+	max-width: 418px;
 }
 
 .name-title {
-	font-size: 55px;
-	line-height: 65px;
+	font-size: 60px;
+	line-height: 70px;
 	margin: auto auto;
 	margin-bottom: 40px;
 }
@@ -113,14 +139,63 @@ a:hover {
 	font-weight: bold;
 }
 
-.top-description {
-	
+.description > p {
+	margin-bottom: 20px;
+	letter-spacing: 1px;
 }
 
 	/* Who Am I */
 
 .whoami {
-	margin: 40px 5%;
-	padding: 10px 5px;
+	margin: auto auto;
+	padding: 50px 5%;
+	background-color: #116416;
+	color: #fff;
 }
 
+.iam {
+	display: block;
+	margin: auto auto;
+	width: 1000px;
+}
+
+.iam > div {
+	float: left;
+	width: 450px;
+}
+
+.iam p {
+	margin: auto auto;
+	letter-spacing: .5px;
+	margin-top: 10px;
+}
+
+.iam h2 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.iam .picture {
+	width: 500px;
+	float: right;
+}
+.iam > .picture > img {
+	width: 500px;
+}
+
+.picture p {
+	float: right;
+	font-size: 16px;
+}
+
+/* Portfolio	*/
+
+.portfolio {
+	background: #182157;
+}
+
+/* Contact */
+
+.contact {
+	background: #54A759;
+}
