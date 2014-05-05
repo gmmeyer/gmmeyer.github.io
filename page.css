@@ -8,8 +8,18 @@ html, section, li, a, ul, body {
 	font-family: "FontAwesome", "HelveticaNeue", "Helvetica", sans-serif;
 }
 
+ul {
+	list-style: none;
+}
+
 body {
-	color: ;
+	color: #000;
+}
+
+.group:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 a {
@@ -21,11 +31,50 @@ a:hover {
 	text-decoration: underline;
 }
 
+.cover {
+	background-color: #313A75;
+	color: white;
+	height: 500px;
+}
 
 
 .navbar-wrapper {
-	margin: 10px auto;
-	background: teal;
+	margin-top: 20px;
 	color: white;
+	width: 100%;
+}
+
+.navwrapper {
+	margin: auto 10%;
+}
+
+.header {
+	margin: 5px auto;
+	display: block;
+	border-radius: 5px;
+	background-color: #AD74A8;
+}
+
+.header ul {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.header li {
+	float: left;
+}
+
+.header a {
+	display: block;
+	padding: 20px;
+}
+
+.header a:hover{
+	background-color: #74276D;
+
+}
+
+.header a:active, .header .active > a {
+	background-color: #3A0035;
 }
 
