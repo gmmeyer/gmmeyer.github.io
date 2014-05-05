@@ -1,0 +1,8 @@
+html, section, li, a, ul, body {
+	font: inherit;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "FontAwesome", "HelveticaNeue", "Helvetica", sans-serif;
+}
+
