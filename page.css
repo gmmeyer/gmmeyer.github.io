@@ -190,6 +190,29 @@ a:hover {
 
 .portfolio {
 	background: #182157;
+	color: white;
+}
+
+.portfolio > p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.portfolio div {
+	margin: auto auto;
+}
+
+.portfolio .fontawesome {
+	padding: 20px;
+}
+
+.fontawesome {
+	margin: 10px;
+}
+
+.fontawesome:hover {
+	
 }
 
 /* Contact */
