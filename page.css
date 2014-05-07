@@ -196,7 +196,6 @@ a:hover {
 .portfolio > p {
 	margin-top: 20px;
 	margin-bottom: 20px;
-
 }
 
 .portfolio div {
@@ -211,8 +210,18 @@ a:hover {
 	margin: 10px;
 }
 
+
+.fontawesome {
+	color: #fff;
+}
+
 .fontawesome:hover {
-	
+	color: #ccc;	
+}
+
+.fontawesome:active {
+	color: #aaa;
+	top: 1px;
 }
 
 /* Contact */
