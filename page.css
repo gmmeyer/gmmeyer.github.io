@@ -188,9 +188,39 @@ a:hover {
 
 /* Portfolio	*/
 
-.portfolio {
+.github {
+	display: block;
+	padding: 10px 10px;
+	margin: auto auto;
+	text-align: center;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+a.github:hover {
+	/*background: #080F3A;*/
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+	text-decoration: none;
+}
+
+a.github:active {
+	text-decoration: underline;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+}
+
+.github > p {
+	text-align: left;
+}
+
+.portfolio-wrapper {
 	background: #182157;
+	padding: 20px 5%;
+	margin: auto auto;
 	color: white;
+}
+
+.portfolio {
+	width: 1000px;
+	margin: auto auto;
 }
 
 .portfolio > p {
@@ -200,6 +230,44 @@ a:hover {
 
 .portfolio div {
 	margin: auto auto;
+}
+
+.portfolio-items {
+	display: block;
+	margin: auto auto;
+}
+
+.portfolio-item {
+	float: left;
+	/*border: 1px solid #000;*/
+	margin: 5px 20px;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.4);
+}
+
+a.slider{
+	display: block;
+	padding: 20px;
+	cursor: pointer;
+}
+
+a.slider:hover {
+	background-color: #525B92;
+	text-decoration: none;
+}
+
+a.slider:active {
+	background-color: #525B92;
+	text-decoration: none;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+}
+
+.isHidden {
+	display: hidden;
+}
+
+.isPortfolio {
+	display: block;
+	width: 80%;
 }
 
 .portfolio .fontawesome {
