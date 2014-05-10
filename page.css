@@ -151,10 +151,19 @@ a:hover {
 	color: #fff;
 }
 
+
 .iam {
 	display: block;
 	margin: auto auto;
+	margin-top: 40px;
 	width: 1000px;
+}
+
+.iam > h2 {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .iam > div {
@@ -165,12 +174,7 @@ a:hover {
 .iam p {
 	margin: auto auto;
 	letter-spacing: .5px;
-	margin-top: 10px;
-}
-
-.iam h2 {
-	margin-top: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .iam .picture {
@@ -235,6 +239,7 @@ a.github:active {
 .portfolio-items {
 	display: block;
 	margin: auto auto;
+	margin-top: 50px;
 }
 
 .portfolio-item {
