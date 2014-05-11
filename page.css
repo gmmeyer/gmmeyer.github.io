@@ -43,10 +43,6 @@ a {
 	color: white;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 /* Navbar */
 
 .navbar-wrapper {
