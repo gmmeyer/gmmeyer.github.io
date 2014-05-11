@@ -19,6 +19,11 @@ PersonalPages.Views.Index = Backbone.View.extend({
 	openUp: function (event) {
 		event.preventDefault();
 		console.log(event);
+	  if ( $( ".slider" ).is( ":hidden" ) ) {
+	    $( "div" ).slideDown( "slow" );
+	  } else {
+	    $( "div" ).hide();
+	  }
 	},
 
 	closeDown: function () {

@@ -261,7 +261,8 @@ a.slider:active {
 }
 
 .isHidden {
-	display: hidden;
+	display: none;
+	overflow: hidden;
 }
 
 .isPortfolio {
@@ -295,4 +296,5 @@ a.slider:active {
 
 .contact {
 	background: #54A759;
+	padding: 20px 5%;
 }
