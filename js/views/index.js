@@ -1,14 +1,14 @@
 PersonalPages.Views.Index = Backbone.View.extend({
 
 	initialize: function () {
-	}//,
+	},
 
-	// render: function () {
-	// 	var content = this.template();
-	// 	this.$el.html(content);
+	render: function () {
+		var content = this.template();
+		this.$el.html(content);
 		
-	// 	return this;
-	// },
+		return this;
+	},
 
 	events: {
 		"click .slider" : "openUp",
@@ -24,7 +24,9 @@ PersonalPages.Views.Index = Backbone.View.extend({
 	closeDown: function () {
 		event.preventDefault();
 		console.log(event);
-	}
+	},
+
+	
 
 
 })
