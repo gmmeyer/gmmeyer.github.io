@@ -252,8 +252,8 @@ a.github:active {
 }
 
 .portfolio-item {
-	float: left;
-	margin: 5px 20px;
+	float: center;
+	margin: 20px 20px;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.4);
 }
 
@@ -272,6 +272,10 @@ a.slider:active {
 	background-color: #525B92;
 	text-decoration: none;
 	box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+}
+
+.slidee {
+	padding: 20px;
 }
 
 .isHidden {
@@ -308,20 +312,39 @@ a.slider:active {
 
 /* Contact */
 
-.contact {
+.contact-wrapper {
 	display: block;
-	text-align: center;
 	margin: auto auto;
 	background: #54A759;
 	padding: 20px 5%;
 	color: #fff;
-	padding-bottom: 300px;
 }
 
-.contact > a.fontawesome: {
-	height: 100px;
+.contact {
+	max-width: 1000px;
+	margin: auto auto;
+	text-align: center;
+}
+
+.contact > a.fontawesome {
+	text-decoration: none;
+}
+
+.contact > a.fontawesome > i {
 	display: block;
-	float: left;
-	margin: 10px 10px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 20px 20px;
 	padding: 10px 10px;
+}
+
+.contact > .slidee {
+	display: block;
+	float: center;
+	padding: 5px;
+}
+
+.contact > .isHidden {
+	display: none;
+	overflow: hidden;
 }
