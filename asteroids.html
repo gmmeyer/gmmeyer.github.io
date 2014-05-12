@@ -6,28 +6,28 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="page.css">
   <style>
-    a {
+    .asteroids-contact a {
       color: green;
       text-decoration: none;
     }
-    a:hover {
+    .asteroids-contact a:hover {
       text-decoration: underline;
     }
-    p {
+    .asteroids-contact p {
       color: #fff;
       display: block;
       float: right;
     }
-    section {
+    section.asteroids-contact {
       float: right;
-      width: 250px;
-      margin: 20px 20px;
-      margin-top: 15%;
     }
-    body {
+    .asteroids-body {
       background: black;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
     }
-    canvas {
+    canvas.asteroids {
       display: block;
       margin: auto auto;
       margin-top: 20px;
@@ -43,20 +43,26 @@
 </head>
 <body>
 
-  <canvas width='500' height='500'></canvas>
-  <section>
-  <p class="group">
-    <a href="./index.html">Back to homepage</a>
-  </p>
+  <div class='asteroids-body'>
 
-  <p class="group">
-    Created by<a href="./index.html">Greg Meyer</a>
-  </p>
+    <canvas class='asteroids' width='500' height='500'></canvas>
 
-  <p class="group">
-    <a href="https://github.com/gmmeyer/Asteroids">Source</a>
-  </p>
-  </section>
+    <section class="asteroids-contact">
+      <p class="group">
+        <a href="./index.html">Back to homepage</a>
+      </p>
+
+      <p class="group">
+        Created by<a href="./index.html">Greg Meyer</a>
+      </p>
+
+      <p class="group">
+        <a href="https://github.com/gmmeyer/Asteroids">Source</a>
+      </p>
+    </section>
+    
+  </div>
+
 
 
   <script>

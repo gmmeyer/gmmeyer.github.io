@@ -1,0 +1,1 @@
+"<div class='asteroids-body'><canvas class='asteroids' width='500' height='500'></canvas><section class='asteroids-contact'><p class='group'><a href='./index.html'>Back to homepage</a></p><p class='group'>Created by<a href='./index.html'>Greg Meyer</a></p><p class='group'><a href='https://github.com/gmmeyer/Asteroids'>Source</a></p></section></div>"

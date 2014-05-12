@@ -348,3 +348,35 @@ a.slider:active {
 	display: none;
 	overflow: hidden;
 }
+
+
+
+/* Asteroids */
+
+.asteroids-body {
+  background: black;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+canvas.asteroids {
+  display: block;
+  margin: auto auto;
+  margin-top: 20px;
+  border: 1px dashed white;
+}
+.asteroids-contact a {
+  color: green;
+  text-decoration: none;
+}
+.asteroids-contact a:hover {
+  text-decoration: underline;
+}
+.asteroids-contact p {
+  color: #fff;
+  display: block;
+  float: right;
+}
+section.asteroids-contact {
+  float: right;
+}
