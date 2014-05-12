@@ -372,10 +372,11 @@ canvas.asteroids-game {
 .asteroids-contact a:hover {
   text-decoration: underline;
 }
-.asteroids-contact p {
+.asteroids-body p {
   color: #fff;
   display: block;
-  float: right;
+  float: center;
+  text-align: center;
 }
 section.asteroids-contact {
   float: right;

@@ -15,8 +15,11 @@ PersonalPages.Router = Backbone.Router.extend({
 	},
 
 	asteroids: function () {
-		var view = new PersonalPages.Views.Asteroids();
+		var view = new PersonalPages.Views.Index();
 		this._swapView(view);
+		event = {currentTarget: {nextElementSibling: '.asteroids-wrapper'}}
+		view.openUp(event, {directURL: true});
+		view.renderAsteroids({directURL: true});
 	},
 
 	_swapView: function (newView) {

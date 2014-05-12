@@ -21,8 +21,10 @@ PersonalPages.Views.Index = Backbone.View.extend({
 		"click .asteroids" : "renderAsteroids"
 	},
 
-	openUp: function (event) {
-		event.preventDefault();
+	openUp: function (event, directURL) {
+		if(!directURL){
+			event.preventDefault();
+		}
 	  if ( $( 
 		event.currentTarget.nextElementSibling ).is( ":hidden" ) ) {
 	    $( 
@@ -38,8 +40,10 @@ PersonalPages.Views.Index = Backbone.View.extend({
 		console.log(event);
 	},
 
-	renderAsteroids: function () {
-		event.preventDefault();
+	renderAsteroids: function (directURL) {
+		if(!directURL){
+			event.preventDefault();
+		}
 		if(this._asteroidsRendered){
 			$('.asteroids-body').remove()
 			this._asteroidsRendered = false
