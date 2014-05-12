@@ -1,0 +1,3 @@
+[submodule "Asteroids"]
+	path = Asteroids
+	url = https://github.com/gmmeyer/Asteroids.git
