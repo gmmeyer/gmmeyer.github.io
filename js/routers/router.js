@@ -1,7 +1,6 @@
 PersonalPages.Router = Backbone.Router.extend({
 
-  initialize: function (options) {
-    // this.$rootEl = options.$rootEl;
+  initialize: function () {
     this.$rootEl = $('#content');
   },
 
