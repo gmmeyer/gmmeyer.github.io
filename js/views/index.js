@@ -22,9 +22,7 @@ PersonalPages.Views.Index = Backbone.View.extend({
 	},
 
 	openUp: function (event) {
-		// console.log('boo')
 		event.preventDefault();
-		console.log(event);
 	  if ( $( 
 		event.currentTarget.nextElementSibling ).is( ":hidden" ) ) {
 	    $( 
@@ -48,9 +46,7 @@ PersonalPages.Views.Index = Backbone.View.extend({
 		} else {
 			var view = new PersonalPages.Views.Asteroids();
 			$('.asteroids-wrapper').append(view.render().$el)
-	    var canvas = document.getElementsByTagName('Canvas')[0];
-	    var my_game = new Asteroids.Game(canvas, 20)
-	    my_game.start();
+			this.my_game = view.startGame()
 	    this._asteroidsRendered = true
 		}
 	}

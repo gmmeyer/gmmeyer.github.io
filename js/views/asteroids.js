@@ -6,6 +6,13 @@ PersonalPages.Views.Asteroids = Backbone.View.extend({
 		console.log("lkjsdaflkjadflkdsjaflj");
 	},
 
+	startGame: function () {
+    var canvas = document.getElementsByTagName('Canvas')[0];
+    my_game = new Asteroids.Game(canvas, 20)
+    my_game.start();
+    return my_game
+	},
+
 	render: function () {
 		var content = this.template();
 		this.$el.html(content);
