@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Asteroids! </title>
-  <script src="./keymaster.js"></script>
-  <script src="./moving_object.js"></script>
-  <script src="./ship.js"></script>
-  <script src="./asteroid.js"></script>
-  <script src="./game.js"></script>
+    <title>Asteroids! | Greg Meyer</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="page.css">
+  <style>
+    a {
+      color: green;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      color: #fff;
+      display: block;
+      float: right;
+    }
+    section {
+      float: right;
+      width: 250px;
+      margin: 20px 20px;
+      margin-top: 15%;
+    }
+    body {
+      background: black;
+    }
+    canvas {
+      display: block;
+      margin: auto auto;
+      margin-top: 20px;
+      border: 1px dashed white;
+    }
+  </style>
+  <script src="./Asteroids/keymaster.js"></script>
+  <script src="./Asteroids/moving_object.js"></script>
+  <script src="./Asteroids/ship.js"></script>
+  <script src="./Asteroids/asteroid.js"></script>
+  <script src="./Asteroids/bullet.js"></script>
+  <script src="./Asteroids/game.js"></script>
 </head>
 <body>
 
   <canvas width='500' height='500'></canvas>
+  <section>
+  <p class="group">
+    <a href="./index.html">Back to homepage</a>
+  </p>
+
+  <p class="group">
+    Created by<a href="./index.html">Greg Meyer</a>
+  </p>
+
+  <p class="group">
+    <a href="https://github.com/gmmeyer/Asteroids">Source</a>
+  </p>
+  </section>
+
 
   <script>
     var canvas = document.getElementsByTagName('Canvas')[0];
     var my_game = new Asteroids.Game(canvas, 20)
-    //my_game.bindKeyHandlers(my_game)
     my_game.start();
   </script>
 </body>
