@@ -49,10 +49,16 @@ a:hover {
 
 /* Navbar */
 
+.nav-wrapper {
+	height: 84px;
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+}
+
 .navbar-wrapper {
 	position: relative;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	/*margin-top: 20px;*/
+	/*margin-bottom: 20px;*/
 	color: white;
 	width: 100%;
 }
@@ -63,7 +69,7 @@ a:hover {
 }
 
 .header {
-	margin: 5px auto;
+	margin: auto auto;
 	display: block;
 	border-radius: 5px;
 	background-color: #AD74A8;
