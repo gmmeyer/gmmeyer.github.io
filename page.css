@@ -52,13 +52,10 @@ a:hover {
 .nav-wrapper {
 	height: 84px;
 	margin-top: 20px;
-	/*margin-bottom: 20px;*/
 }
 
 .navbar-wrapper {
 	position: relative;
-	margin-top: 10px;
-	/*margin-bottom: 20px;*/
 	color: white;
 	width: 100%;
 }
