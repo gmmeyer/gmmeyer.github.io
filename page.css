@@ -203,7 +203,7 @@ a.github:hover {
 a.github:active {
 	color: #aaa;
 	background: #080F3A;
-	box-shadow: 0 0 3px 3px rgba(0,0,0,.4);
+	box-shadow: 0 0 4px 3px rgba(0,0,0,.4);
 }
 
 .github > p {
@@ -295,6 +295,19 @@ a.slider:active {
 /* Contact */
 
 .contact {
+	display: block;
+	text-align: center;
+	margin: auto auto;
 	background: #54A759;
 	padding: 20px 5%;
+	color: #fff;
+	padding-bottom: 300px;
+}
+
+.contact > a.fontawesome: {
+	height: 100px;
+	display: block;
+	float: left;
+	margin: 10px 10px;
+	padding: 10px 10px;
 }

@@ -2,15 +2,15 @@ PersonalPages.Router = Backbone.Router.extend({
 
   initialize: function (options) {
     // this.$rootEl = options.$rootEl;
-    this.$rootEl = $('#content')
+    this.$rootEl = $('#content');
   },
 
 	routes: {
-		'': 'index',
+		'': 'index'
 	},
 
 	index: function () {
-		var view = new CodeKindaSmart.Views.Index()
+		var view = new PersonalPages.Views.Index()
 		this._swapView(view)
 	},
 
