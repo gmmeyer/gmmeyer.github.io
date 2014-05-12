@@ -43,6 +43,10 @@ a {
 	color: white;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 /* Navbar */
 
 .navbar-wrapper {
@@ -208,6 +212,10 @@ a.github:active {
 
 .github > p {
 	text-align: left;
+}
+
+.slidee  a {
+	color: #FFB41F;
 }
 
 .portfolio-wrapper {
