@@ -54,8 +54,4 @@ PersonalPages.Views.Index = Backbone.View.extend({
 	    this._asteroidsRendered = true
 		}
 	}
-
-	
-
-
 })

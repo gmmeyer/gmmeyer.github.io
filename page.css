@@ -1,6 +1,6 @@
 /* Resets */
 
-html, section, li, a, ul, body, h1, h2, p{
+html, section, li, a, ul, body, h1, h2, h3, p{
 	font: inherit;
 	padding: 0;
 	margin: 0;
@@ -29,6 +29,11 @@ p {
 
 h2 {
 	font-size: 45px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 35px;
 	font-weight: bold;
 }
 
@@ -291,20 +296,11 @@ a.slider:active {
 
 .fontawesome {
 	margin: 10px;
-}
-
-
-.fontawesome {
 	color: #fff;
 }
 
-.fontawesome:hover {
-	color: #ccc;	
-}
-
-.fontawesome:active {
-	color: #aaa;
-	top: 1px;
+.fontawesome:hover{
+	color: #ccc;
 }
 
 /* Contact */
@@ -315,6 +311,10 @@ a.slider:active {
 	background: #54A759;
 	padding: 20px 5%;
 	color: #fff;
+}
+
+.contact > h2 {
+	margin-bottom: 15px;
 }
 
 .contact {
