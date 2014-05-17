@@ -311,6 +311,7 @@ a.slider:active {
 	background: #54A759;
 	padding: 20px 5%;
 	color: #fff;
+	padding-bottom: 100px;
 }
 
 .contact > h2 {
