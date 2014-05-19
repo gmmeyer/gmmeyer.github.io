@@ -43,6 +43,7 @@ PersonalPages.Views.Index = Backbone.View.extend({
 	renderAsteroids: function (directURL) {
 		if(!directURL){
 			event.preventDefault();
+			PersonalPages.router.navigate("asteroids");
 		}
 		if(this._asteroidsRendered){
 			$('.asteroids-body').remove()
